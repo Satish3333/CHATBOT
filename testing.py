@@ -11,20 +11,20 @@ import random
 import pickle
 
 
-with open(r"C:\Users\HP\Documents\project\einstein3.json") as file:
+with open(r"C:\Users\ganes\Chat_Bot\CHATBOT\einstein3.json") as file:
     data = json.load(file)
 
 
 def chat():
     # load trained model
-    model = keras.models.load_model(r'C:\Users\HP\Documents\project\chat_model')
+    model = keras.models.load_model(r'C:\Users\ganes\Chat_Bot\CHATBOT\chat_model')
 
     # load tokenizer object
-    with open(r'C:\Users\HP\Documents\project\tokenizer.pickle', 'rb') as handle:
+    with open(r'C:\Users\ganes\Chat_Bot\CHATBOT\tokenizer.pickle', 'rb') as handle:
         tokenizer = pickle.load(handle)
 
     # load label encoder object
-    with open(r'C:\Users\HP\Documents\project\label_encoder.pickle', 'rb') as enc:
+    with open(r'C:\Users\ganes\Chat_Bot\CHATBOT\label_encoder.pickle', 'rb') as enc:
         lbl_encoder = pickle.load(enc)
 
     # parameters

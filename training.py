@@ -8,7 +8,7 @@ from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from sklearn.preprocessing import LabelEncoder
 
-with open(r'C:\Users\HP\Documents\project\einstein3.json') as file:
+with open(r'C:\Users\ganes\Chat_Bot\CHATBOT\einstein3.json') as file:
     data = json.load(file)
     
 training_sentences = []
